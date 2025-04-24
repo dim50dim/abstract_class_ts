@@ -17,8 +17,8 @@ class SignupForm extends SignupFormAbstract{
     public password: string = '';
 
     public validatePassword(password: string): boolean {
-         const trimmed = password.trim();
-         return trimmed.length >= 8;
+        
+         return password.trim().length >= 8;
     }
 }
 const form = new SignupForm();
@@ -27,7 +27,7 @@ form.email = 'user@example.com';
 form.password = '  secret12  ';
 
 console.log(form.validatePassword(form.password)); // true
-console.log(form.validatePassword(' short '));   
+console.log(form.validatePassword(' sho'));   
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
 // Task 02
