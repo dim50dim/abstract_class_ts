@@ -17,11 +17,17 @@ class SignupForm extends SignupFormAbstract{
     public password: string = '';
 
     public validatePassword(password: string): boolean {
-        if(this.password.length < 8) return false;
-        else this.password.trim().length;
+         const trimmed = password.trim();
+         return trimmed.length >= 8;
     }
 }
+const form = new SignupForm();
+form.username = 'user123';
+form.email = 'user@example.com';
+form.password = '  secret12  ';
 
+console.log(form.validatePassword(form.password)); // true
+console.log(form.validatePassword(' short '));   
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
 // Task 02
