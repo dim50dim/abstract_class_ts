@@ -17,7 +17,8 @@ class SignupForm extends SignupFormAbstract{
     public password: string = '';
 
     public validatePassword(password: string): boolean {
-        
+        if(this.password.length < 8) return false;
+        else this.password.trim().length;
     }
 }
 

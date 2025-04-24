@@ -5,7 +5,16 @@
 class SignupFormAbstract {
 }
 // Тут создаете класс SignupForm
-class SignupForm {
+class SignupForm extends SignupFormAbstract {
+    username = '';
+    email = '';
+    password = '';
+    validatePassword(password) {
+        if (this.password.length < 8)
+            return false;
+        else
+            this.password.trim().length;
+    }
 }
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // Task 02
