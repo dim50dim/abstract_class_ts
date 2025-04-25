@@ -44,11 +44,15 @@ class SignupForm_02 extends SignupFormAbstract{
        this.email = email;
        this.password = password;
     }
+    
+    public validatePassword(password: string): boolean {
+        
+        return password.trim().length >= 8;
+   }
 }
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
-// console.log(new SignupForm_02('abba', 'abba@email.ua', '234'));
+console.log(new SignupForm_02('abba', 'abba@email.ua', '234'));
 
-// Task 03
 // Пример из реального фреймворка
 // Создайте абстрактный класс CF. Класс содержит абстрактные поля name, email, subject, body, verifyCode все string, и абстрактный метод sendEmail, который принимает аргумент email, тип метода boolean. 
 

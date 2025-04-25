@@ -22,9 +22,22 @@ console.log(form.validatePassword(' sho'));
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // Task 02
 // Создан абстрактный класс SignupFormAbstract. Создайте на его основе класс SignupForm_02, который реализуем свойства и методы абстрактного класса. Для метода validatePassword - реализуйте удаление пробелов по краям и вычисление длины. Если длина меньше 8 символов, возвращайте false, в остальных случаях - true. Значений свойств по умолчанию - пустые строки. Реализуйте в классе конструктор, который задает значения username, email, password при создании объекта. 
+class SignupForm_02 extends SignupFormAbstract {
+    username = '';
+    email = '';
+    password = '';
+    constructor(username, email, password) {
+        super();
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+    validatePassword(password) {
+        return password.trim().length >= 8;
+    }
+}
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
-// console.log(new SignupForm_02('abba', 'abba@email.ua', '234'));
-// Task 03
+console.log(new SignupForm_02('abba', 'abba@email.ua', '234'));
 // Пример из реального фреймворка
 // Создайте абстрактный класс CF. Класс содержит абстрактные поля name, email, subject, body, verifyCode все string, и абстрактный метод sendEmail, который принимает аргумент email, тип метода boolean. 
 // Тут создаете класс CF
