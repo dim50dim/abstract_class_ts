@@ -33,8 +33,18 @@ console.log(form.validatePassword(' sho'));
 // Task 02
 // Создан абстрактный класс SignupFormAbstract. Создайте на его основе класс SignupForm_02, который реализуем свойства и методы абстрактного класса. Для метода validatePassword - реализуйте удаление пробелов по краям и вычисление длины. Если длина меньше 8 символов, возвращайте false, в остальных случаях - true. Значений свойств по умолчанию - пустые строки. Реализуйте в классе конструктор, который задает значения username, email, password при создании объекта. 
 
-// Тут создаете класс SignupForm_02
-
+class SignupForm_02 extends SignupFormAbstract{
+    public username: string = '';
+    public email: string = '';
+    public password: string = '';
+    
+    constructor(username:string, email: string, password: string){
+        super();
+       this.username = username;
+       this.email = email;
+       this.password = password;
+    }
+}
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // console.log(new SignupForm_02('abba', 'abba@email.ua', '234'));
 
