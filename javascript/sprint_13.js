@@ -33,7 +33,7 @@ class SignupForm_02 extends SignupFormAbstract {
         this.password = password;
     }
     validatePassword(password) {
-        return password.trim().length >= 8;
+        return password.trim().length > 8;
     }
 }
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
