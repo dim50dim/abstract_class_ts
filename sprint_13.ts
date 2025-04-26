@@ -122,8 +122,8 @@ class Client extends User{
         return 0;
     }
 }
-const obj = new Client();
-console.log(obj);
+// const obj = new Client();
+// console.log(obj);
 
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
