@@ -106,7 +106,7 @@ abstract class User{
     public abstract email:string;
     public abstract status: number;
 
-    public abstract findByUsername(username:string):boolean| false;
+    public abstract findByUsername(username:string): number |false ;
 }
 
 // Task 06
@@ -117,7 +117,13 @@ class Client extends User{
     public username: string = '';
     public email: string = '';
     public status: number = 0;
+     
+    public findByUsername(username: string): number | false {
+        return 0;
+    }
 }
+const obj = new Client();
+console.log(obj);
 
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
