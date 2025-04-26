@@ -64,7 +64,7 @@ class SignupForm_02 extends SignupFormAbstract{
     public abstract body: string;
     public abstract verifyCode:string;
 
-    public abstract sendEmail(email:boolean);
+    public abstract sendEmail(email:string):boolean;
  }
 
 
@@ -91,6 +91,8 @@ class ContactForm extends CF{
         }
 
 }
+// const obj = new ContactForm('mike','adfadfa@gmail.com','learn','body','546498745');
+// console.log(obj.verifyCode);
 
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 

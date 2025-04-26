@@ -59,8 +59,11 @@ class ContactForm extends CF {
         this.verifyCode = verifyCode;
     }
     sendEmail(email) {
+        return true;
     }
 }
+// const obj = new ContactForm('mike','adfadfa@gmail.com','learn','body','546498745');
+// console.log(obj.verifyCode);
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // Task 05
 // Пример из реального фреймворка
