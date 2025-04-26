@@ -56,7 +56,10 @@ class SignupForm_02 extends SignupFormAbstract{
 
 // Пример из реального фреймворка
 // Создайте абстрактный класс CF. Класс содержит абстрактные поля name, email, subject, body, verifyCode все string, и абстрактный метод sendEmail, который принимает аргумент email, тип метода boolean. 
-
+ 
+ abstract class CF {
+    
+ }
 
 
 // Task 04
