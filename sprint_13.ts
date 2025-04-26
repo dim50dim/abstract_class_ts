@@ -71,7 +71,26 @@ class SignupForm_02 extends SignupFormAbstract{
 // Task 04
 // Создайте класс ContactForm на основе класса CF. Свойства реализуйте как пустые строки, добавьте класс конструктор, который позволяет заполнить свойства name, email, subject, body, verifyCode при создании объекта. Метод sendEmail, реализуйте как функцию, возвращающую true.
 
-// Тут создаете класс ContactForm
+class ContactForm extends CF{
+    public name: string = '';
+    public email: string = '';
+    public subject: string = '';
+    public body: string = '';
+    public verifyCode: string = '';
+
+    constructor (name: string, email: string, subject: string, body: string,verifyCode: string){
+        super();
+        this.name = name;
+        this.email = email;
+        this.subject = subject;
+        this.body = body;
+        this.verifyCode = verifyCode;
+    }
+        public sendEmail(email:string): boolean { 
+             return true;
+        }
+
+}
 
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
