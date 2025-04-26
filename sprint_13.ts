@@ -146,7 +146,25 @@ class Client extends User{
 // string meta_description
 // Добавьте два readonly свойства общие для всех классов наследников PUBLISHED_YES = 'Yes', PUBLISHED_NO = 'No';
 
-// Тут создаете класс ArticleInstance
+abstract class ArticleInstance{
+     readonly PUBLISHED_YES: string = 'Yes';
+     readonly PUBLISHED_NO: string = 'No';
+
+    
+     
+  public abstract article_id: number;
+  public abstract author_id: number;
+  public abstract language: string;
+  public abstract created: number;
+  public abstract updated: number;
+  public abstract published: string;
+  public abstract hits_count: number;
+  public abstract intro_text: string;
+  public abstract full_text: string;
+  public abstract title: string;
+  public abstract meta_keywords: string;
+  public abstract meta_description: string;
+}
 
 // Task 08
 // Создайте на основе абстрактного класса ArticleInstance класс Article, где реализуйте все необходимые свойства и методы. По умолчанию числовые значения равны 0, строковые пустой строке. Не применяйте конструктор.
