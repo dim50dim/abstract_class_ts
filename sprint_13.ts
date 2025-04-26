@@ -100,7 +100,14 @@ class ContactForm extends CF{
 // Пример из реального фреймворка
 // Создайте абстрактный класс User, который содержит абстрактные свойства id - number, username - string, email - string, status - number. Напишите абстрактный метод findByUsername, который принимает имя пользователя - username, и возвращает id пользователя или false.
 
-// Тут создаете класс User
+abstract class User{
+    public abstract id: number;
+    public abstract username: string;
+    public abstract email:string;
+    public abstract status: number;
+
+    public abstract findByUsername(username:string):boolean| false;
+}
 
 // Task 06
 // Создайте на основе абстрактного класса User класс Client, где реализуйте все необходимые свойства и методы. По умолчанию числовые значения равны 0, строковые пустой строке. Метод должен возвращать 0. Не применяйте конструктор.
