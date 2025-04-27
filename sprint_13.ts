@@ -218,7 +218,18 @@ abstract class BundleCSS{
 // Создайте на базе BundleCSS класс CssBundle, реализуйте свойства и методы. Задайте начальные значения для строк и массивов (пустые строки, пустые массивы). Не применяйте конструктор.
 
 // Тут создаете класс CssBundle
-//   class CssBundle extends BundleCSS{
+  class CssBundle extends BundleCSS{
+  public sourcePath: string = '';
+  public basePath: string = '';
+  public baseUrl: string = '';
+  public depends: string[] = [];
+  public cssOptions: string[] = [];
+
+  public publish(): void {
       
-//   }
+  }
+  public init(): void {
+      
+  }
+  }
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.

@@ -140,7 +140,16 @@ class BundleCSS {
 // Task 10
 // Создайте на базе BundleCSS класс CssBundle, реализуйте свойства и методы. Задайте начальные значения для строк и массивов (пустые строки, пустые массивы). Не применяйте конструктор.
 // Тут создаете класс CssBundle
-//   class CssBundle extends BundleCSS{
-//   }
+class CssBundle extends BundleCSS {
+    sourcePath = '';
+    basePath = '';
+    baseUrl = '';
+    depends = [];
+    cssOptions = [];
+    publish() {
+    }
+    init() {
+    }
+}
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 //# sourceMappingURL=sprint_13.js.map
