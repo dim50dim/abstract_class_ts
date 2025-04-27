@@ -101,8 +101,6 @@ class Client extends User {
 // string meta_description
 // Добавьте два readonly свойства общие для всех классов наследников PUBLISHED_YES = 'Yes', PUBLISHED_NO = 'No';
 class ArticleInstance {
-    PUBLISHED_YES = 'Yes';
-    PUBLISHED_NO = 'No';
 }
 // Task 08
 // Создайте на основе абстрактного класса ArticleInstance класс Article, где реализуйте все необходимые свойства и методы. По умолчанию числовые значения равны 0, строковые пустой строке. Не применяйте конструктор.
@@ -123,6 +121,8 @@ class Article extends ArticleInstance {
     meta_keywords = '';
     meta_description = '';
 }
+// const obj = new Article();
+// console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES)
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // Task 09
 // Пример из реального фреймворка
@@ -135,6 +135,8 @@ class Article extends ArticleInstance {
 // Добавьте абстрактный метод init, void.
 // Добавьте абстрактный метод publish, void.
 // Тут создаете класс BundleCSS
+class BundleCSS {
+}
 // Task 10
 // Создайте на базе BundleCSS класс CssBundle, реализуйте свойства и методы. Задайте начальные значения для строк и массивов (пустые строки, пустые массивы). Не применяйте конструктор.
 // Тут создаете класс CssBundle

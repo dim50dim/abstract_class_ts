@@ -147,8 +147,7 @@ class Client extends User{
 // Добавьте два readonly свойства общие для всех классов наследников PUBLISHED_YES = 'Yes', PUBLISHED_NO = 'No';
 
 abstract class ArticleInstance{
-     readonly PUBLISHED_YES: string = 'Yes';
-     readonly PUBLISHED_NO: string = 'No';
+ 
 
     
      
@@ -187,6 +186,9 @@ class Article extends ArticleInstance{
     public  meta_keywords: string = '';
     public  meta_description: string = '';
 }
+// const obj = new Article();
+// console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES)
+
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
 
@@ -202,7 +204,16 @@ class Article extends ArticleInstance{
 // Добавьте абстрактный метод publish, void.
 
 // Тут создаете класс BundleCSS
+abstract class BundleCSS{
+    public abstract sourcePath:string;
+    public abstract basePath: string;
+    public abstract baseUrl : string;
+    public abstract depends : string[];
+    public abstract cssOptions : string[];
 
+    public abstract init():void;
+    public abstract publish():void;
+}
 // Task 10
 // Создайте на базе BundleCSS класс CssBundle, реализуйте свойства и методы. Задайте начальные значения для строк и массивов (пустые строки, пустые массивы). Не применяйте конструктор.
 
