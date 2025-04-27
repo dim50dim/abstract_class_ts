@@ -121,8 +121,8 @@ class Article extends ArticleInstance {
     meta_keywords = '';
     meta_description = '';
 }
-const obj = new Article();
-console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES);
+// const obj = new Article();
+// console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES)
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // Task 09
 // Пример из реального фреймворка

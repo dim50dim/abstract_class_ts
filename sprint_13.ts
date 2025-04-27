@@ -186,8 +186,8 @@ class Article extends ArticleInstance{
     public  meta_keywords: string = '';
     public  meta_description: string = '';
 }
-const obj = new Article();
-console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES)
+// const obj = new Article();
+// console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES)
 
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
