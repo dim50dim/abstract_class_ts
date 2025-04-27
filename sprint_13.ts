@@ -21,13 +21,13 @@ class SignupForm extends SignupFormAbstract{
          return password.trim().length >= 8;
     }
 }
-const form = new SignupForm();
-form.username = 'user123';
-form.email = 'user@example.com';
-form.password = '  secret12  ';
+// const form = new SignupForm();
+// form.username = 'user123';
+// form.email = 'user@example.com';
+// form.password = '  secret12  ';
 
-console.log(form.validatePassword(form.password)); // true
-console.log(form.validatePassword(' sho'));   
+// console.log(form.validatePassword(form.password)); 
+// console.log(form.validatePassword(' sho'));   
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
 // Task 02
@@ -170,7 +170,23 @@ abstract class ArticleInstance{
 // Создайте на основе абстрактного класса ArticleInstance класс Article, где реализуйте все необходимые свойства и методы. По умолчанию числовые значения равны 0, строковые пустой строке. Не применяйте конструктор.
 
 // Тут создаете класс Article
+class Article extends ArticleInstance{
+    readonly PUBLISHED_YES: string = 'Yes';
+    readonly PUBLISHED_NO: string = 'No';
 
+    public  article_id: number = 0;
+    public  author_id: number = 0; 
+    public  language: string = '';
+    public  created: number = 0;
+    public  updated: number = 0;
+    public  published: string = '';
+    public  hits_count: number = 0;
+    public  intro_text: string = '';
+    public  full_text: string = '';
+    public  title: string = '';
+    public  meta_keywords: string = '';
+    public  meta_description: string = '';
+}
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
 

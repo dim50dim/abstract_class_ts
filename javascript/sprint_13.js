@@ -13,12 +13,12 @@ class SignupForm extends SignupFormAbstract {
         return password.trim().length >= 8;
     }
 }
-const form = new SignupForm();
-form.username = 'user123';
-form.email = 'user@example.com';
-form.password = '  secret12  ';
-console.log(form.validatePassword(form.password)); // true
-console.log(form.validatePassword(' sho'));
+// const form = new SignupForm();
+// form.username = 'user123';
+// form.email = 'user@example.com';
+// form.password = '  secret12  ';
+// console.log(form.validatePassword(form.password)); 
+// console.log(form.validatePassword(' sho'));   
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // Task 02
 // Создан абстрактный класс SignupFormAbstract. Создайте на его основе класс SignupForm_02, который реализуем свойства и методы абстрактного класса. Для метода validatePassword - реализуйте удаление пробелов по краям и вычисление длины. Если длина меньше 8 символов, возвращайте false, в остальных случаях - true. Значений свойств по умолчанию - пустые строки. Реализуйте в классе конструктор, который задает значения username, email, password при создании объекта. 
@@ -107,6 +107,22 @@ class ArticleInstance {
 // Task 08
 // Создайте на основе абстрактного класса ArticleInstance класс Article, где реализуйте все необходимые свойства и методы. По умолчанию числовые значения равны 0, строковые пустой строке. Не применяйте конструктор.
 // Тут создаете класс Article
+class Article extends ArticleInstance {
+    PUBLISHED_YES = 'Yes';
+    PUBLISHED_NO = 'No';
+    article_id = 0;
+    author_id = 0;
+    language = '';
+    created = 0;
+    updated = 0;
+    published = '';
+    hits_count = 0;
+    intro_text = '';
+    full_text = '';
+    title = '';
+    meta_keywords = '';
+    meta_description = '';
+}
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 // Task 09
 // Пример из реального фреймворка
