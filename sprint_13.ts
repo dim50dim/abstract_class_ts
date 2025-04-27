@@ -230,6 +230,8 @@ abstract class BundleCSS{
   }
   public init(): void {
       
-  }
-  }
+  } }
+//   const obj = new CssBundle();
+//   console.log(obj);
+  
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
