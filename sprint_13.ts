@@ -148,6 +148,8 @@ class Client extends User{
 
 abstract class ArticleInstance{
  
+    readonly PUBLISHED_YES: string = 'Yes';
+    readonly PUBLISHED_NO: string = 'No';
 
     
      
@@ -170,8 +172,6 @@ abstract class ArticleInstance{
 
 // Тут создаете класс Article
 class Article extends ArticleInstance{
-    readonly PUBLISHED_YES: string = 'Yes';
-    readonly PUBLISHED_NO: string = 'No';
 
     public  article_id: number = 0;
     public  author_id: number = 0; 
@@ -186,8 +186,8 @@ class Article extends ArticleInstance{
     public  meta_keywords: string = '';
     public  meta_description: string = '';
 }
-// const obj = new Article();
-// console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES)
+const obj = new Article();
+console.log(obj.PUBLISHED_NO + ' ' + obj.PUBLISHED_YES)
 
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
 
@@ -218,5 +218,7 @@ abstract class BundleCSS{
 // Создайте на базе BundleCSS класс CssBundle, реализуйте свойства и методы. Задайте начальные значения для строк и массивов (пустые строки, пустые массивы). Не применяйте конструктор.
 
 // Тут создаете класс CssBundle
-
+//   class CssBundle extends BundleCSS{
+      
+//   }
 // Проверку созданного класса реализуйте самостоятельно. После проверки - удалите или комментируйте.
